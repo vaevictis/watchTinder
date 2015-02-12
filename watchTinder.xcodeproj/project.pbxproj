@@ -11,8 +11,8 @@
 		F0ED6C891A8C27D900EA3FF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED6C881A8C27D900EA3FF0 /* ViewController.swift */; };
 		F0ED6C8C1A8C27D900EA3FF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0ED6C8A1A8C27D900EA3FF0 /* Main.storyboard */; };
 		F0ED6C8E1A8C27D900EA3FF0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0ED6C8D1A8C27D900EA3FF0 /* Images.xcassets */; };
-		F0ED6C911A8C27D900EA3FF0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0ED6C8F1A8C27D900EA3FF0 /* LaunchScreen.xib */; };
 		F0ED6C9D1A8C27D900EA3FF0 /* watchTinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED6C9C1A8C27D900EA3FF0 /* watchTinderTests.swift */; };
+		F0ED6CA91A8C3B5400EA3FF0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0ED6CA81A8C3B5400EA3FF0 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,10 +32,10 @@
 		F0ED6C881A8C27D900EA3FF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F0ED6C8B1A8C27D900EA3FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0ED6C8D1A8C27D900EA3FF0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F0ED6C901A8C27D900EA3FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F0ED6C961A8C27D900EA3FF0 /* watchTinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = watchTinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0ED6C9B1A8C27D900EA3FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0ED6C9C1A8C27D900EA3FF0 /* watchTinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchTinderTests.swift; sourceTree = "<group>"; };
+		F0ED6CA81A8C3B5400EA3FF0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0ED6CA91A8C3B5400EA3FF0 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +60,7 @@
 		F0ED6C781A8C27D900EA3FF0 = {
 			isa = PBXGroup;
 			children = (
+				F0ED6CA81A8C3B5400EA3FF0 /* CoreLocation.framework */,
 				F0ED6C831A8C27D900EA3FF0 /* watchTinder */,
 				F0ED6C991A8C27D900EA3FF0 /* watchTinderTests */,
 				F0ED6C821A8C27D900EA3FF0 /* Products */,
@@ -81,7 +83,6 @@
 				F0ED6C881A8C27D900EA3FF0 /* ViewController.swift */,
 				F0ED6C8A1A8C27D900EA3FF0 /* Main.storyboard */,
 				F0ED6C8D1A8C27D900EA3FF0 /* Images.xcassets */,
-				F0ED6C8F1A8C27D900EA3FF0 /* LaunchScreen.xib */,
 				F0ED6C841A8C27D900EA3FF0 /* Supporting Files */,
 			);
 			path = watchTinder;
@@ -193,7 +194,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0ED6C8C1A8C27D900EA3FF0 /* Main.storyboard in Resources */,
-				F0ED6C911A8C27D900EA3FF0 /* LaunchScreen.xib in Resources */,
 				F0ED6C8E1A8C27D900EA3FF0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,14 +242,6 @@
 				F0ED6C8B1A8C27D900EA3FF0 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F0ED6C8F1A8C27D900EA3FF0 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F0ED6C901A8C27D900EA3FF0 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -409,6 +401,7 @@
 				F0ED6CA21A8C27D900EA3FF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F0ED6CA31A8C27D900EA3FF0 /* Build configuration list for PBXNativeTarget "watchTinderTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +410,7 @@
 				F0ED6CA51A8C27D900EA3FF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
