@@ -19,13 +19,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     @IBAction func findMyLocation(sender: AnyObject) {
-        println("location pushed")
         locationManager.requestWhenInUseAuthorization()
         
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.startUpdatingLocation()
-        println("location update started")
     }
     
     // Delegates for CLLocationManager
@@ -36,7 +34,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 println("Reverse geocoder failed with error" + error.localizedDescription)
                 return
             }
-            println(placemarks)
             if placemarks.count > 0 {
                 let pm = placemarks[0] as! CLPlacemark
                 self.displayLocationInfo(pm)
@@ -47,15 +44,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func displayLocationInfo(placemark: CLPlacemark) {
-        println("in displayLocationInfo")
-        println(placemark)
         if !placemark.isEqual(nil) {
+            var currentLocation  = placemark.location
+            
             //stop updating location to save battery life
             locationManager.stopUpdatingLocation()
-            println(placemark.locality.isEmpty ? "" : placemark.locality)
-            println(placemark.postalCode.isEmpty ? "" : placemark.postalCode)
-            println(placemark.administrativeArea.isEmpty ? "" : placemark.administrativeArea)
-            println(placemark.country.isEmpty ? "" : placemark.country)
+            println("longitude: \(currentLocation.coordinate.longitude)")
+            println("latitude: \(currentLocation.coordinate.latitude)")
         }
 
     }
