@@ -12,6 +12,9 @@ import CoreLocation
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
     let locationManager = CLLocationManager()
+
+    @IBOutlet weak var longitude : UILabel!
+    @IBOutlet weak var latitude : UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +52,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             
             //stop updating location to save battery life
             locationManager.stopUpdatingLocation()
+            self.latitude.text = currentLocation.coordinate.latitude.description
+            self.longitude.text = currentLocation.coordinate.longitude.description
             println("longitude: \(currentLocation.coordinate.longitude)")
             println("latitude: \(currentLocation.coordinate.latitude)")
         }
