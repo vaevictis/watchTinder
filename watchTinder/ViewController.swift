@@ -12,6 +12,8 @@ import CoreLocation
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
     let locationManager = CLLocationManager()
+    var latValue : String = ""
+    var longValue : String = ""
 
     @IBOutlet weak var longitude : UILabel!
     @IBOutlet weak var latitude : UILabel!
@@ -31,17 +33,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     @IBAction func sendHttpRequest(sender: AnyObject) {
-        let url = NSURL(string: "http://i4.au.reastatic.net/1010x570/ae1391f68762a68214342239581e3ade381554376684c119caf1bd25a6ccdcaf/main.jpg")
-        
-        let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {
-            (data, response, error) in
-                println(NSString(data: data, encoding: NSUTF8StringEncoding))
-        }
-        
-        task.resume()
-        
-        let data = NSData(contentsOfURL: url!)
-        propertyImage.image = UIImage(data: data!)
+        Property.fetch(latValue, long: longValue)
     }
     
     // Delegates for CLLocationManager
@@ -67,8 +59,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             
             //stop updating location to save battery life
             locationManager.stopUpdatingLocation()
+            latValue = currentLocation.coordinate.latitude.description
             self.latitude.text = currentLocation.coordinate.latitude.description
+            
+            longValue = currentLocation.coordinate.longitude.description
             self.longitude.text = currentLocation.coordinate.longitude.description
+            
             println("longitude: \(currentLocation.coordinate.longitude)")
             println("latitude: \(currentLocation.coordinate.latitude)")
         }

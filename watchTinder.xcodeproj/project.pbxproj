@@ -15,6 +15,7 @@
 		F0ED6CA91A8C3B5400EA3FF0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0ED6CA81A8C3B5400EA3FF0 /* CoreLocation.framework */; };
 		F0ED6CAB1A8C715C00EA3FF0 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0ED6CAA1A8C715C00EA3FF0 /* CoreImage.framework */; };
 		F0ED6CAD1A8C721400EA3FF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0ED6CAC1A8C721400EA3FF0 /* UIKit.framework */; };
+		F0ED6CB31A8C740500EA3FF0 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED6CB21A8C740500EA3FF0 /* Property.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		F0ED6CA81A8C3B5400EA3FF0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F0ED6CAA1A8C715C00EA3FF0 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		F0ED6CAC1A8C721400EA3FF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F0ED6CB21A8C740500EA3FF0 /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Property.swift; path = ../Property.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		F0ED6C831A8C27D900EA3FF0 /* watchTinder */ = {
 			isa = PBXGroup;
 			children = (
+				F0ED6CB21A8C740500EA3FF0 /* Property.swift */,
 				F0ED6C861A8C27D900EA3FF0 /* AppDelegate.swift */,
 				F0ED6C881A8C27D900EA3FF0 /* ViewController.swift */,
 				F0ED6C8A1A8C27D900EA3FF0 /* Main.storyboard */,
@@ -220,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0ED6CB31A8C740500EA3FF0 /* Property.swift in Sources */,
 				F0ED6C891A8C27D900EA3FF0 /* ViewController.swift in Sources */,
 				F0ED6C871A8C27D900EA3FF0 /* AppDelegate.swift in Sources */,
 			);
