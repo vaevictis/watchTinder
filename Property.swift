@@ -13,16 +13,26 @@ class Property {
     var imageURL : String = ""
     
     
-    class func fetch(var lat : String, var long : String) -> Property {
+    class func fetch(completionHandler: ((String!) -> Void)?) {
         println("fetch")
-        let url = NSURL(string: "https://dummy-properties.herokuapp.com/property")
-        let session = NSURLSession.sharedSession()
-        let dataTask = session.dataTaskWithURL(url!, completionHandler: { (data: NSData!, response:NSURLResponse!,
-            error: NSError!) -> Void in
-            println("data: \(data)")
-        })
+        var property = Property()
+
+        DataManager.getDataFromApiWithSuccess { (propertiesData) -> Void in
+            let json = JSON(data: propertiesData)
+            
+            if let propertyName = json["name"].stringValue as String? {
+                println("SwiftyJSON: \(propertyName)")
+                property.name = propertyName
+            }
+            
+            if let propertyImage = json["image"].stringValue as String? {
+                println("SwiftyJSON: \(propertyImage)")
+                property.imageURL = propertyImage
+            }
+            
+            completionHandler?(property.imageURL)
+        }
         
-        return Property()
     }
     
 }

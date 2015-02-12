@@ -19,11 +19,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var latitude : UILabel!
     @IBOutlet weak var propertyImage: UIImageView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    
     @IBAction func findMyLocation(sender: AnyObject) {
         locationManager.requestWhenInUseAuthorization()
         
@@ -33,7 +28,32 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     @IBAction func sendHttpRequest(sender: AnyObject) {
-        Property.fetch(latValue, long: longValue)
+        // Make that asynchronous.
+        // Printing the image has to wait for the property to actually be fetched.
+        
+        Property.fetch(self.printImage)
+    }
+    
+    
+    func printImage(imageURL: String!) {
+        println("image url: \(imageURL)")
+
+        let url = NSURL(string: imageURL)
+
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {
+            
+            (data, response, error) in
+            println(NSString(data: data, encoding: NSUTF8StringEncoding))
+        }
+
+        task.resume()
+
+        let data = NSData(contentsOfURL: url!)
+        propertyImage.image = UIImage(data: data!)
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
     }
     
     // Delegates for CLLocationManager
