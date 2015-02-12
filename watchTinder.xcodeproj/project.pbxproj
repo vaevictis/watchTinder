@@ -13,6 +13,8 @@
 		F0ED6C8E1A8C27D900EA3FF0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0ED6C8D1A8C27D900EA3FF0 /* Images.xcassets */; };
 		F0ED6C9D1A8C27D900EA3FF0 /* watchTinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED6C9C1A8C27D900EA3FF0 /* watchTinderTests.swift */; };
 		F0ED6CA91A8C3B5400EA3FF0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0ED6CA81A8C3B5400EA3FF0 /* CoreLocation.framework */; };
+		F0ED6CAB1A8C715C00EA3FF0 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0ED6CAA1A8C715C00EA3FF0 /* CoreImage.framework */; };
+		F0ED6CAD1A8C721400EA3FF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0ED6CAC1A8C721400EA3FF0 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		F0ED6C9B1A8C27D900EA3FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0ED6C9C1A8C27D900EA3FF0 /* watchTinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watchTinderTests.swift; sourceTree = "<group>"; };
 		F0ED6CA81A8C3B5400EA3FF0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F0ED6CAA1A8C715C00EA3FF0 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		F0ED6CAC1A8C721400EA3FF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0ED6CAD1A8C721400EA3FF0 /* UIKit.framework in Frameworks */,
+				F0ED6CAB1A8C715C00EA3FF0 /* CoreImage.framework in Frameworks */,
 				F0ED6CA91A8C3B5400EA3FF0 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,6 +66,8 @@
 		F0ED6C781A8C27D900EA3FF0 = {
 			isa = PBXGroup;
 			children = (
+				F0ED6CAC1A8C721400EA3FF0 /* UIKit.framework */,
+				F0ED6CAA1A8C715C00EA3FF0 /* CoreImage.framework */,
 				F0ED6CA81A8C3B5400EA3FF0 /* CoreLocation.framework */,
 				F0ED6C831A8C27D900EA3FF0 /* watchTinder */,
 				F0ED6C991A8C27D900EA3FF0 /* watchTinderTests */,
