@@ -27,16 +27,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.startUpdatingLocation()
         
         var localNotification:UILocalNotification = UILocalNotification()
-        println("allez!")
+        println("phone notification!")
+        localNotification.alertTitle = "Plz show on watch"
         localNotification.alertAction = "Testing notifications on iOS8"
         localNotification.alertBody = "Woww it works!!"
         localNotification.fireDate = NSDate(timeIntervalSinceNow: 10)
         UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
-    }
-    
-    @IBAction func sendHttpRequest(sender: AnyObject) {
-        // Make that asynchronous.
-        // Printing the image has to wait for the property to actually be fetched.
         
         Property.fetch(self.printImage)
     }

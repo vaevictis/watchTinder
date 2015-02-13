@@ -10,7 +10,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="watchTinder_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label alignment="left" text="Hello watch!" id="xG8-As-cDr"/>
+                        <label height="20" alignment="center" text="Hello REA watch!" textAlignment="left" id="xG8-As-cDr"/>
                         <imageView alignment="center" verticalAlignment="center" id="yg8-id-Aas"/>
                     </items>
                     <connections>

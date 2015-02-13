@@ -16,6 +16,7 @@ class InterfaceController: WKInterfaceController {
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
+                
         let property: () = Property.fetch(self.printImageOnWatch)
         // Configure interface objects here.
     }

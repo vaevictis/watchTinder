@@ -12,6 +12,8 @@ import Foundation
 
 class NotificationController: WKUserNotificationInterfaceController {
 
+    @IBOutlet weak var propertyImage: WKInterfaceImage!
+    
     override init() {
         // Initialize variables here.
         super.init()

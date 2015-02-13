@@ -23,23 +23,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOf-ZE-JNy">
-                                <rect key="frame" x="257" y="115" width="87" height="30"/>
-                                <state key="normal" title="Where am I?">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="findMyLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sN4-Ga-dj6"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQI-oN-qUq">
-                                <rect key="frame" x="279" y="57" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOM-FN-Q7u">
-                                <rect key="frame" x="279" y="86" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOM-FN-Q7u">
+                                <rect key="frame" x="288" y="86" width="24" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -57,17 +42,23 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Jw-07-ez0">
-                                <rect key="frame" x="233" y="431" width="134" height="30"/>
-                                <state key="normal" title="Send HTTP request">
+                                <rect key="frame" x="257" y="431" width="87" height="30"/>
+                                <state key="normal" title="Get property">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="sendHttpRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tgm-rP-UQQ"/>
+                                    <action selector="findMyLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1u1-bi-FOx"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u1J-Pc-fbn">
                                 <rect key="frame" x="16" y="153" width="568" height="270"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQI-oN-qUq">
+                                <rect key="frame" x="288" y="57" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -82,15 +73,12 @@
                             <constraint firstItem="F6a-sY-I2l" firstAttribute="top" secondItem="KDY-5S-Ghn" secondAttribute="bottom" constant="8" id="Iks-ys-XRa"/>
                             <constraint firstItem="F6a-sY-I2l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Naj-SW-f5a"/>
                             <constraint firstItem="KDY-5S-Ghn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="37" id="Sds-LD-5ec"/>
+                            <constraint firstItem="u1J-Pc-fbn" firstAttribute="top" secondItem="F6a-sY-I2l" secondAttribute="bottom" constant="46" id="UEf-Ki-bNN"/>
                             <constraint firstItem="u1J-Pc-fbn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Xpj-Ay-uKl"/>
-                            <constraint firstAttribute="centerX" secondItem="DOf-ZE-JNy" secondAttribute="centerX" id="gmb-Xd-sMi"/>
                             <constraint firstItem="7Jw-07-ez0" firstAttribute="top" secondItem="u1J-Pc-fbn" secondAttribute="bottom" constant="8" id="j3j-be-PbZ"/>
                             <constraint firstItem="u1J-Pc-fbn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lVX-qZ-MpY"/>
-                            <constraint firstItem="u1J-Pc-fbn" firstAttribute="top" secondItem="DOf-ZE-JNy" secondAttribute="bottom" constant="8" id="lqT-uU-q8Q"/>
                             <constraint firstItem="gQI-oN-qUq" firstAttribute="top" secondItem="I1W-My-tU0" secondAttribute="bottom" constant="8" id="pV4-k8-dWz"/>
-                            <constraint firstAttribute="centerX" secondItem="DOf-ZE-JNy" secondAttribute="centerX" id="pcD-JK-zbS"/>
                             <constraint firstAttribute="centerX" secondItem="I1W-My-tU0" secondAttribute="centerX" id="xgS-eG-E1K"/>
-                            <constraint firstItem="DOf-ZE-JNy" firstAttribute="top" secondItem="jOM-FN-Q7u" secondAttribute="bottom" constant="8" id="y9j-td-t3b"/>
                         </constraints>
                     </view>
                     <connections>
