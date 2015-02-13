@@ -9,6 +9,17 @@
 /* Begin PBXBuildFile section */
 		9D3AE40A1A8CD3DE0091429E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3AE4091A8CD3DE0091429E /* DataManager.swift */; };
 		9D3AE40C1A8CD3F80091429E /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3AE40B1A8CD3F80091429E /* SwiftyJSON.swift */; };
+		F0E04FE11A8D79BD00CA3F0C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3AE4091A8CD3DE0091429E /* DataManager.swift */; };
+		F0E04FE21A8D79CE00CA3F0C /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3AE40B1A8CD3F80091429E /* SwiftyJSON.swift */; };
+		F0E699E01A8D6E6D00424D40 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E699DF1A8D6E6D00424D40 /* InterfaceController.swift */; };
+		F0E699E21A8D6E6D00424D40 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E699E11A8D6E6D00424D40 /* NotificationController.swift */; };
+		F0E699E41A8D6E6D00424D40 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E699E31A8D6E6D00424D40 /* GlanceController.swift */; };
+		F0E699E61A8D6E6D00424D40 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0E699E51A8D6E6D00424D40 /* Images.xcassets */; };
+		F0E699EA1A8D6E6D00424D40 /* watchTinder WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = F0E699E91A8D6E6D00424D40 /* watchTinder WatchKit App.app */; };
+		F0E699F21A8D6E6D00424D40 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0E699F01A8D6E6D00424D40 /* Interface.storyboard */; };
+		F0E699F41A8D6E6D00424D40 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0E699F31A8D6E6D00424D40 /* Images.xcassets */; };
+		F0E699F71A8D6E6D00424D40 /* watchTinder WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F0E699DA1A8D6E6D00424D40 /* watchTinder WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F0E699FF1A8D74B400424D40 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED6CB21A8C740500EA3FF0 /* Property.swift */; };
 		F0ED6C871A8C27D900EA3FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED6C861A8C27D900EA3FF0 /* AppDelegate.swift */; };
 		F0ED6C891A8C27D900EA3FF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ED6C881A8C27D900EA3FF0 /* ViewController.swift */; };
 		F0ED6C8C1A8C27D900EA3FF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0ED6C8A1A8C27D900EA3FF0 /* Main.storyboard */; };
@@ -21,6 +32,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F0E699EB1A8D6E6D00424D40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0ED6C791A8C27D900EA3FF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0E699E81A8D6E6D00424D40;
+			remoteInfo = "watchTinder WatchKit App";
+		};
+		F0E699F51A8D6E6D00424D40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0ED6C791A8C27D900EA3FF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0E699D91A8D6E6D00424D40;
+			remoteInfo = "watchTinder WatchKit Extension";
+		};
 		F0ED6C971A8C27D900EA3FF0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F0ED6C791A8C27D900EA3FF0 /* Project object */;
@@ -30,9 +55,34 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F0E699FE1A8D6E6D00424D40 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F0E699F71A8D6E6D00424D40 /* watchTinder WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		9D3AE4091A8CD3DE0091429E /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = watchTinder/DataManager.swift; sourceTree = "<group>"; };
 		9D3AE40B1A8CD3F80091429E /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = watchTinder/SwiftyJSON.swift; sourceTree = "<group>"; };
+		F0E699DA1A8D6E6D00424D40 /* watchTinder WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watchTinder WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0E699DD1A8D6E6D00424D40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0E699DE1A8D6E6D00424D40 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F0E699DF1A8D6E6D00424D40 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F0E699E11A8D6E6D00424D40 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F0E699E31A8D6E6D00424D40 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		F0E699E51A8D6E6D00424D40 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F0E699E91A8D6E6D00424D40 /* watchTinder WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchTinder WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0E699EF1A8D6E6D00424D40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0E699F11A8D6E6D00424D40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F0E699F31A8D6E6D00424D40 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F0ED6C811A8C27D900EA3FF0 /* watchTinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchTinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0ED6C851A8C27D900EA3FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0ED6C861A8C27D900EA3FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +99,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F0E699D71A8D6E6D00424D40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F0ED6C7E1A8C27D900EA3FF0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,6 +135,45 @@
 			name = "external dependencies";
 			sourceTree = "<group>";
 		};
+		F0E699DB1A8D6E6D00424D40 /* watchTinder WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F0E699DF1A8D6E6D00424D40 /* InterfaceController.swift */,
+				F0E699E11A8D6E6D00424D40 /* NotificationController.swift */,
+				F0E699E31A8D6E6D00424D40 /* GlanceController.swift */,
+				F0E699E51A8D6E6D00424D40 /* Images.xcassets */,
+				F0E699DC1A8D6E6D00424D40 /* Supporting Files */,
+			);
+			path = "watchTinder WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F0E699DC1A8D6E6D00424D40 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0E699DD1A8D6E6D00424D40 /* Info.plist */,
+				F0E699DE1A8D6E6D00424D40 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F0E699ED1A8D6E6D00424D40 /* watchTinder WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F0E699F01A8D6E6D00424D40 /* Interface.storyboard */,
+				F0E699F31A8D6E6D00424D40 /* Images.xcassets */,
+				F0E699EE1A8D6E6D00424D40 /* Supporting Files */,
+			);
+			path = "watchTinder WatchKit App";
+			sourceTree = "<group>";
+		};
+		F0E699EE1A8D6E6D00424D40 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F0E699EF1A8D6E6D00424D40 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		F0ED6C781A8C27D900EA3FF0 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +183,8 @@
 				F0ED6CA81A8C3B5400EA3FF0 /* CoreLocation.framework */,
 				F0ED6C831A8C27D900EA3FF0 /* watchTinder */,
 				F0ED6C991A8C27D900EA3FF0 /* watchTinderTests */,
+				F0E699DB1A8D6E6D00424D40 /* watchTinder WatchKit Extension */,
+				F0E699ED1A8D6E6D00424D40 /* watchTinder WatchKit App */,
 				F0ED6C821A8C27D900EA3FF0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,6 +194,8 @@
 			children = (
 				F0ED6C811A8C27D900EA3FF0 /* watchTinder.app */,
 				F0ED6C961A8C27D900EA3FF0 /* watchTinderTests.xctest */,
+				F0E699DA1A8D6E6D00424D40 /* watchTinder WatchKit Extension.appex */,
+				F0E699E91A8D6E6D00424D40 /* watchTinder WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,6 +241,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F0E699D91A8D6E6D00424D40 /* watchTinder WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0E699FD1A8D6E6D00424D40 /* Build configuration list for PBXNativeTarget "watchTinder WatchKit Extension" */;
+			buildPhases = (
+				F0E699D61A8D6E6D00424D40 /* Sources */,
+				F0E699D71A8D6E6D00424D40 /* Frameworks */,
+				F0E699D81A8D6E6D00424D40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0E699EC1A8D6E6D00424D40 /* PBXTargetDependency */,
+			);
+			name = "watchTinder WatchKit Extension";
+			productName = "watchTinder WatchKit Extension";
+			productReference = F0E699DA1A8D6E6D00424D40 /* watchTinder WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		F0E699E81A8D6E6D00424D40 /* watchTinder WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0E699FC1A8D6E6D00424D40 /* Build configuration list for PBXNativeTarget "watchTinder WatchKit App" */;
+			buildPhases = (
+				F0E699E71A8D6E6D00424D40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "watchTinder WatchKit App";
+			productName = "watchTinder WatchKit App";
+			productReference = F0E699E91A8D6E6D00424D40 /* watchTinder WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 		F0ED6C801A8C27D900EA3FF0 /* watchTinder */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0ED6CA01A8C27D900EA3FF0 /* Build configuration list for PBXNativeTarget "watchTinder" */;
@@ -148,10 +281,12 @@
 				F0ED6C7D1A8C27D900EA3FF0 /* Sources */,
 				F0ED6C7E1A8C27D900EA3FF0 /* Frameworks */,
 				F0ED6C7F1A8C27D900EA3FF0 /* Resources */,
+				F0E699FE1A8D6E6D00424D40 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F0E699F61A8D6E6D00424D40 /* PBXTargetDependency */,
 			);
 			name = watchTinder;
 			productName = watchTinder;
@@ -185,6 +320,12 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = reaHack;
 				TargetAttributes = {
+					F0E699D91A8D6E6D00424D40 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					F0E699E81A8D6E6D00424D40 = {
+						CreatedOnToolsVersion = 6.3;
+					};
 					F0ED6C801A8C27D900EA3FF0 = {
 						CreatedOnToolsVersion = 6.3;
 					};
@@ -209,11 +350,31 @@
 			targets = (
 				F0ED6C801A8C27D900EA3FF0 /* watchTinder */,
 				F0ED6C951A8C27D900EA3FF0 /* watchTinderTests */,
+				F0E699D91A8D6E6D00424D40 /* watchTinder WatchKit Extension */,
+				F0E699E81A8D6E6D00424D40 /* watchTinder WatchKit App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F0E699D81A8D6E6D00424D40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0E699EA1A8D6E6D00424D40 /* watchTinder WatchKit App.app in Resources */,
+				F0E699E61A8D6E6D00424D40 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0E699E71A8D6E6D00424D40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0E699F21A8D6E6D00424D40 /* Interface.storyboard in Resources */,
+				F0E699F41A8D6E6D00424D40 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F0ED6C7F1A8C27D900EA3FF0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -233,6 +394,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F0E699D61A8D6E6D00424D40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0E699E21A8D6E6D00424D40 /* NotificationController.swift in Sources */,
+				F0E04FE11A8D79BD00CA3F0C /* DataManager.swift in Sources */,
+				F0E699E01A8D6E6D00424D40 /* InterfaceController.swift in Sources */,
+				F0E04FE21A8D79CE00CA3F0C /* SwiftyJSON.swift in Sources */,
+				F0E699FF1A8D74B400424D40 /* Property.swift in Sources */,
+				F0E699E41A8D6E6D00424D40 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F0ED6C7D1A8C27D900EA3FF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +430,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F0E699EC1A8D6E6D00424D40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0E699E81A8D6E6D00424D40 /* watchTinder WatchKit App */;
+			targetProxy = F0E699EB1A8D6E6D00424D40 /* PBXContainerItemProxy */;
+		};
+		F0E699F61A8D6E6D00424D40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0E699D91A8D6E6D00424D40 /* watchTinder WatchKit Extension */;
+			targetProxy = F0E699F51A8D6E6D00424D40 /* PBXContainerItemProxy */;
+		};
 		F0ED6C981A8C27D900EA3FF0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F0ED6C801A8C27D900EA3FF0 /* watchTinder */;
@@ -264,6 +448,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		F0E699F01A8D6E6D00424D40 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0E699F11A8D6E6D00424D40 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		F0ED6C8A1A8C27D900EA3FF0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -275,6 +467,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F0E699F81A8D6E6D00424D40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "watchTinder WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F0E699F91A8D6E6D00424D40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "watchTinder WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F0E699FA1A8D6E6D00424D40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = watchTinder_WatchKit_Extension;
+				INFOPLIST_FILE = "watchTinder WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		F0E699FB1A8D6E6D00424D40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = watchTinder_WatchKit_Extension;
+				INFOPLIST_FILE = "watchTinder WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 		F0ED6C9E1A8C27D900EA3FF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -360,6 +606,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = watchTinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -370,6 +617,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = watchTinder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -413,6 +661,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F0E699FC1A8D6E6D00424D40 /* Build configuration list for PBXNativeTarget "watchTinder WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0E699FA1A8D6E6D00424D40 /* Debug */,
+				F0E699FB1A8D6E6D00424D40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0E699FD1A8D6E6D00424D40 /* Build configuration list for PBXNativeTarget "watchTinder WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0E699F81A8D6E6D00424D40 /* Debug */,
+				F0E699F91A8D6E6D00424D40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F0ED6C7C1A8C27D900EA3FF0 /* Build configuration list for PBXProject "watchTinder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
