@@ -25,6 +25,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.startUpdatingLocation()
+        
+        var localNotification:UILocalNotification = UILocalNotification()
+        println("allez!")
+        localNotification.alertAction = "Testing notifications on iOS8"
+        localNotification.alertBody = "Woww it works!!"
+        localNotification.fireDate = NSDate(timeIntervalSinceNow: 10)
+        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
     }
     
     @IBAction func sendHttpRequest(sender: AnyObject) {
@@ -50,6 +57,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
         let data = NSData(contentsOfURL: url!)
         propertyImage.image = UIImage(data: data!)
+        
     }
 
     override func viewDidLoad() {
